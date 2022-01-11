@@ -1,4 +1,6 @@
-# MiPrimeraApp
+# Tutorial paso a paso Angular en español 
+
+Autor: Mg. Ing. Hernán Borré 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.2.
 
