@@ -1,9 +1,13 @@
-<div class="persona">
-    <h6>Nueva Persona</h6>
-    <input type="text" [(ngModel)]="persona.nombre">
-    <p>Nombre: {{persona.nombre}}</p>
-    <p>Apellido: {{persona.apellido}}</p>
-    <p>Edad: {{persona.edad}}</p>
-    <button class="btn btn-danger mb-3" (click)="borrarPersona(persona)" >Eliminar!</button>
-    <button class="btn btn-primary mb-3" (click)="festejo(persona)" >Cumplir Años</button> 
+<div class="card m-2" style="width: 18rem;">
+    <div class="persona">
+        <div class="card-body">
+            <h6 class="card-title">Nueva Persona</h6>
+            <input class="card-text mb-2"  type="text" [(ngModel)]="persona.nombre">
+            <p class="card-text">Nombre: {{persona.nombre}}</p>
+            <p class="card-text">Apellido: {{persona.apellido}}</p>
+            <p class="card-text">Edad: {{persona.edad}}</p>
+            <button class="btn btn-danger mb-3" (click)="borrarPersona(persona)" >Eliminar!</button>
+            <button class="btn btn-primary mb-3" (click)="festejo(persona)" >Cumplir Años</button> 
+        </div>
+    </div>
 </div>
