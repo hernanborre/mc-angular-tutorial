@@ -2,6 +2,7 @@
     <h3> Esta es nuestra lista de personas!</h3>
     
     <div *ngFor="let persona of personas">
-        <app-persona [persona]="persona"></app-persona>
+        <app-persona [persona]="persona"
+        (deletePersona)="borrarPersonaDeLista($event)"></app-persona>
     </div>
 </div>

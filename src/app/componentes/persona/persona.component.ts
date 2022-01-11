@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { Persona } from 'src/app/models/Persona';
 
 @Component({
@@ -9,7 +9,8 @@ import { Persona } from 'src/app/models/Persona';
 export class PersonaComponent implements OnInit {
 
   @Input() persona: Persona = new Persona()
-
+  @Output() deletePersona:EventEmitter<Persona> = new EventEmitter()
+  
   constructor() { }
 
   ngOnInit(): void {
@@ -19,4 +20,7 @@ export class PersonaComponent implements OnInit {
     persona.cumplirAnios()
   }
 
+  borrarPersona(personaParaBorrar:Persona) {
+    this.deletePersona.emit(personaParaBorrar)
+  }
 }

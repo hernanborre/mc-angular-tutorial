@@ -24,4 +24,8 @@ export class PersonasComponent implements OnInit {
   getAllPersonas():void {
     this.personas = this.personaService.getAllPersonas()
   }
+
+  borrarPersonaDeLista(personaParaBorrar: Persona) {
+    this.personas = this.personas.filter(p => p.nombre !== personaParaBorrar.nombre)
+  }
 }
