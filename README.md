@@ -1,7 +1,3 @@
-
-https://firebase.sdfkljasdfkljsdaf.miapp.com
-
-
 # Tutorial paso a paso Angular en español 
 
 Autor: Mg. Ing. Hernán Borré 
